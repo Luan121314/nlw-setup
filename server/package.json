@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@prisma/client": "^4.8.1",
+    "fastify": "^4.11.0"
+  },
+  "scripts": {
+    "predev": "yarn prisma generate",
+    "dev": "yarn tsx watch src/server.ts"
+  },
+  "devDependencies": {
+    "prisma": "^4.8.1",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.4"
+  }
+}
