@@ -11,8 +11,10 @@
     "zod": "^3.20.2"
   },
   "scripts": {
-    "predev": "yarn prisma generate",
-    "dev": "yarn tsx watch src/server.ts"
+    "predev": "prisma generate",
+    "dev": "tsx watch src/server.ts",
+    "seed": "prisma db seed",
+    "migrate": "prisma migrate dev"
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^9.3.0",
