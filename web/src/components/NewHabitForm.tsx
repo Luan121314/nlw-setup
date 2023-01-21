@@ -37,7 +37,7 @@ export function NewHabitForm() {
 
   function handleToogleWeekDay(weekDay: number) {
     if (weekDays.includes(weekDay)) {
-      const weekDaysWithRemoveOne = weekDays.filter((day) => day === weekDay);
+      const weekDaysWithRemoveOne = weekDays.filter((day) => day !== weekDay);
 
       setWeekDays(weekDaysWithRemoveOne);
     } else {
